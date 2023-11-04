@@ -15,7 +15,7 @@ const TaskScreen: FC = (): JSX.Element => {
   useFocusEffect(() => {
     const interval = setInterval(() => {
       getData();
-    }, 1000);
+    }, 10000);
 
     return () => clearInterval(interval);
   });
